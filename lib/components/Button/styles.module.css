@@ -1,0 +1,39 @@
+.Button {
+    padding: 16px;
+    margin: 8px 16px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 4px rgba(0,0,0,.09);
+    border-radius: 4px;
+    border: 0;
+    color: #000;
+    font-weight: 700;
+    transition: background-color .12s;
+    text-transform: uppercase;
+    height: fit-content;
+}
+.Button.standard.active {
+    background-color: #76E88D;
+}
+.Button.standard:hover {
+    background-color: #A2EFB1;
+    box-shadow: 3px 4px 5px 2px hsla(0,0%,100%,.1),1px 2px 2px 1px hsla(0,0%,78.4%,.3);
+}
+
+.Button.cancel.active {
+    background-color: #E88D76;
+}
+.Button.cancel:hover {
+    background-color: #EFB1A2;
+    box-shadow: 3px 4px 5px 2px hsla(0,0%,100%,.1),1px 2px 2px 1px hsla(0,0%,78.4%,.3);
+}
+.Button:active, .Button.standard:active, .Button.cancel:active {
+    box-shadow: 1px 1px 4px 2px #00000034 inset;
+}
+.Button.disabled {
+    color: #C0C0C0;
+    background-color: #D9D9D9;
+    box-shadow: unset;
+    cursor: not-allowed
+}

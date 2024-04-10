@@ -1,0 +1,25 @@
+.CloseButton {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border: unset;
+    background-color: unset;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color .12s;
+    color: #00000068;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.CloseButton:hover {
+    background-color: #EFB1A2;
+    box-shadow: 3px 4px 5px 2px hsla(0, 0%, 100%, .1), 1px 2px 2px 1px hsla(0, 0%, 78.4%, .3);
+    color: #00000099;
+}
+.CloseButton:active {
+    background-color: #E88D76;
+    box-shadow: 1px 1px 4px 2px #00000034 inset;
+}

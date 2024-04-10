@@ -1,0 +1,40 @@
+.ButtonIcon {
+    padding: 6px;
+    margin: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, .09);
+    border-radius: 4px;
+    border: 0;
+    transition: background-color .12s;
+    height: fit-content;
+    width: fit-content;
+}
+
+.ButtonIcon>img {
+    width: 45px;
+    height: 45px;
+}
+
+.ButtonIcon:hover {
+    background-color: #D9D9D9;
+}
+
+.ButtonIcon:active {
+    background-color: #C0C0C0;
+}
+
+.ButtonIcon:active {
+    box-shadow: 1px 1px 4px 2px #00000034 inset;
+    background-color: #C0C0C0;
+}
+
+.ButtonIcon.disabled {
+    background-color: #D9D9D9;
+    box-shadow: unset;
+    cursor: not-allowed
+}
+
+.ButtonIcon.disabled>img {
+    filter: opacity(0.3);
+}
