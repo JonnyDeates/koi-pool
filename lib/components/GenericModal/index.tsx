@@ -6,7 +6,6 @@ import React from "react";
 import { Button } from "../Button";
 
 
-
 export type GenericModalBaseProps = {
     handleClose: () => void, isOpen: boolean, children: ReactNode,
     modalAttributes?: HTMLAttributes<HTMLDivElement>,

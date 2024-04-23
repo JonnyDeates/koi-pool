@@ -13,6 +13,9 @@ export default defineConfig({
       dts({ include: ['lib'] })
     ],
     build: {
+      manifest: true,
+      minify: true,
+      reportCompressedSize: true,
       copyPublicDir: false,
       lib: {
         entry: resolve(__dirname, 'lib/main.ts'),

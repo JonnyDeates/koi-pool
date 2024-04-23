@@ -1,4 +1,4 @@
-
+import './styles/styles.module.css'
 export { Button } from './components/Button'
 export { LabeledIconButton } from './components/LabeledIconButton'
 export { IconButton } from './components/IconButton'
