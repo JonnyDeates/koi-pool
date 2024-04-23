@@ -6,6 +6,6 @@ type CloseButtonProps = {
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 export function CloseButton(props:CloseButtonProps) {
-    const {className = ''} = props
+    const {className = ''} = props;
     return <button {...props} className={`${styles.CloseButton} ${className}`}>X</button>
 }

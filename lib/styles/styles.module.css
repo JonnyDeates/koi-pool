@@ -1,0 +1,34 @@
+.standard.active {
+    background-color: #C0C0C0;
+}
+.standard.hover {
+    background-color: #D9D9D9;
+}
+
+.accept.active {
+    background-color: #76E88D;
+}
+.accept:hover {
+    background-color: #A2EFB1;
+    box-shadow: 3px 4px 5px 2px hsla(0,0%,100%,.1),1px 2px 2px 1px hsla(0,0%,78.4%,.3);
+}
+
+.cancel.active {
+    background-color: #E88D76;
+}
+.cancel:hover {
+    background-color: #EFB1A2;
+    box-shadow: 3px 4px 5px 2px hsla(0,0%,100%,.1),1px 2px 2px 1px hsla(0,0%,78.4%,.3);
+}
+.standard:active, .accept:active, .cancel:active {
+    box-shadow: 1px 1px 4px 2px #00000034 inset;
+}
+.disabled {
+    color: #C0C0C0;
+    background-color: #D9D9D9;
+    box-shadow: unset;
+    cursor: not-allowed
+}
+.disabled > img {
+    filter: opacity(0.3);
+}

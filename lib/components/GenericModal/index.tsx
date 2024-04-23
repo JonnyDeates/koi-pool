@@ -97,7 +97,7 @@ export function GenericAcceptanceModal({
         cardAttributes={cardAttributes}
         actionButtons={
             [
-                <Button variants="cancel" onClick={handleClose}>Cancel</Button>,
+                <Button variant="cancel" onClick={handleClose}>Cancel</Button>,
                 <Button onClick={handleSubmit}>Submit</Button>
             ]
         }>

@@ -1,23 +1,28 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import {ButtonHTMLAttributes} from 'react'
 import styles from './styles.module.css'
+import globalStyles from './styles.module.css'
+import {VariantsType} from "../../types/VariantsType.ts";
 
 type ButtonProps = {
-    className?: string,
-    variants?: 'cancel' | 'standard' | 'disabled',
-    children: ReactNode,
-    isActive?: boolean
+  variant?: VariantsType,
+  isActive?: boolean
 } & ButtonHTMLAttributes<HTMLButtonElement>
-export function Button(buttonProps: ButtonProps) {
-    const { className = '', children, isActive = false, variants = 'standard', ...standardProps} = buttonProps;
 
-    const activeClassName = isActive ? `${styles.active}` : ''
-    
-    switch(variants){
-        case 'disabled': 
-            return <button className={`${styles.Button} ${styles.disabled} ${className}`} disabled {...standardProps}>{children}</button>
-        case "cancel": 
-            return <button className={`${styles.Button}  ${styles.cancel} ${className} ${activeClassName}`}  {...standardProps} >{children}</button>
-        default:
-            return <button className={`${styles.Button}  ${styles.standard} ${className} ${activeClassName}`} {...standardProps}>{children}</button>
-    } 
+export function Button(buttonProps: ButtonProps) {
+  const {className = '', children, isActive = false, variant = 'standard', disabled, ...standardProps} = buttonProps;
+
+  const activeClassName = isActive ? `${styles.active}` : '';
+  const activeVariant = disabled ? "disabled" : variant;
+
+  switch (activeVariant) {
+    case 'disabled':
+      return <button className={`${styles.Button} ${globalStyles.disabled} ${className}`} disabled {...standardProps}>
+        {children}
+      </button>;
+    default:
+      return <button
+        className={`${styles.Button}  ${globalStyles[variant]} ${className} ${activeClassName}`} {...standardProps}>
+        {children}
+      </button>;
+  }
 }
