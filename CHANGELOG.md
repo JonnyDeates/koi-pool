@@ -1,6 +1,6 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
-### [v0.0.14](https://github.com/JonnyDeates/koi-pool/compare/v0.0.13...v0.0.14)  - (23 April 2024)
+### v0.0.13 - 23 April 2024
 
 #### Features
 
@@ -9,14 +9,8 @@
 
 #### Chores
 
-- chore: adds autochange log, and scripts for deploying [`124e328`](https://github.com/JonnyDeates/koi-pool/commit/124e328596be82a92e23991e49c97bf7ecfcac2c)
-- chore: Adds the deploy script for easy deployment. [`cc49cec`](https://github.com/JonnyDeates/koi-pool/commit/cc49cec05f9bd27f2b50410589734c8633eefdc2)
-- chore: modifies github work flow to get github actions working. [`8003f37`](https://github.com/JonnyDeates/koi-pool/commit/8003f376e44fd2e4d50f3c64a2d4c628ca7aada9)
-
-### [v0.0.13](https://github.com/JonnyDeates/koi-pool/compare/v0.0.12...v0.0.13)  - (23 April 2024)
-
-#### Chores
-
-- chore: adds autochange log, and scripts for deploying [`ed6d83e`](https://github.com/JonnyDeates/koi-pool/commit/ed6d83e6647664f7c357ad6cef7c4beef8eb53c4)
-
-### v0.0.12 - 23 April 2024
+- chore: adds autochange log, and scripts for deploying [`f252289`](https://github.com/JonnyDeates/koi-pool/commit/f2522895185f5b92e518f5ade4bc1a65a7e41eff)
+- [X] chore: Updates CHANGELOG for v0.0.13. [`a0bb833`](https://github.com/JonnyDeates/koi-pool/commit/a0bb8338fbb790a7339b4911bc5d09bc1c77c42c)
+- chore: Adds the deploy script for easy deployment. [`2260ee9`](https://github.com/JonnyDeates/koi-pool/commit/2260ee9720a1d81348de4fd06f7b58a291da226c)
+- chore: modifies github work flow to get github actions working. [`e8dbc81`](https://github.com/JonnyDeates/koi-pool/commit/e8dbc810da63cfa4e997d8dca8bc59a9584ad1f8)
+- chore: modifies changelog settings [`f472950`](https://github.com/JonnyDeates/koi-pool/commit/f4729505ba65066b830301fd50487a0ed285dbbe)
