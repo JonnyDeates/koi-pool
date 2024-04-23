@@ -5,6 +5,7 @@
   "sortCommits": "date",
   "template": "auto.changelog.template.hbs",
   "replaceText": {
-  "(\\(.*)": "$4 [`#$2`]($2)"
+      "(\\(.*)": "$4 [`#$2`]($2)",
+      "(\[X\].*)": ""
     }
 }
