@@ -1,7 +1,7 @@
 import {ButtonHTMLAttributes} from "react";
 import styles from "./styles.module.css"
 import {VariantsType} from "../../types/VariantsType.ts";
-import globalStyles from "../Button/styles.module.css";
+import globalStyles from "../../styles/styles.module.css";
 
 export type LabeledIconButtonProps =
   { variant?: VariantsType, isActive?: boolean, src: string, label: string, alt?: string, }
@@ -24,13 +24,13 @@ export function LabeledIconButton(buttonProps: LabeledIconButtonProps) {
 
   switch (activeVariant) {
     case 'disabled':
-      return <button className={`${styles.LabeledIconButton}  ${globalStyles[variant]}  ${className} ${isActive ? "active" : ""}`} disabled {...standardProps} >
+      return <button className={`${styles.LabeledIconButton}  ${globalStyles[activeVariant]}  ${className}`} disabled {...standardProps} >
         <img src={src} alt={alt ?? label}/>
         <span>{label}</span>
       </button>;
     default:
       return <button
-        className={`${styles.LabeledIconButton}  ${globalStyles[variant]} ${className} ${activeClassName}`} {...standardProps}>
+        className={`${styles.LabeledIconButton}  ${globalStyles[activeVariant]} ${className} ${activeClassName}`} {...standardProps}>
         <img src={src} alt={alt ?? label}/>
         <span>{label}</span>
       </button>;

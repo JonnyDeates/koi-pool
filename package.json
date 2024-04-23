@@ -16,7 +16,6 @@
     "build": "tsc && vite build",
     "deploy": "bash ./scripts/deploy.sh",
     "prepublishOnly": "npm run build",
-    "publish": "npm publish",
     "auto-changelog": "auto-changelog",
     "tsc": "tsc --init",
     "lint": "eslint . --ext ts,tsx"
