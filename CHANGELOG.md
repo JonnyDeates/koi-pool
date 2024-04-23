@@ -1,5 +1,17 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.14](https://github.com/JonnyDeates/koi-pool/compare/v0.0.13...v0.0.14)  - (23 April 2024)
+
+#### Fixes
+
+- fix: Updates styling for LabeledIconButton, to use the right global style. [`162585d`](https://github.com/JonnyDeates/koi-pool/commit/162585dd16eb4ee9c56d5482af6538b3e397831d)
+
+#### Chores
+
+- chore: Adds the deploy script for easy deployment. [`2d06115`](https://github.com/JonnyDeates/koi-pool/commit/2d06115afdd715517de9901cf0d75ccd509a43b5)
+- chore: modifies github work flow to get github actions working. [`f6603a7`](https://github.com/JonnyDeates/koi-pool/commit/f6603a7df8ac9002384873b88d388c150e181ebc)
+- chore: modifies changelog settings [`d2248c0`](https://github.com/JonnyDeates/koi-pool/commit/d2248c04a9d8339298678bf8e3bf60ad4947b39c)
+
 ### v0.0.13 - 23 April 2024
 
 #### Features
