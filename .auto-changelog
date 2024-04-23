@@ -1,0 +1,10 @@
+{
+  "output": "./CHANGELOG.md",
+  "commitLimit": false,
+  "hideCredit": true,
+  "sortCommits": "date",
+  "template": "auto.changelog.template.hbs",
+  "replaceText": {
+  "(\\(.*)": "$4 [`#$2`]($2)"
+    }
+}

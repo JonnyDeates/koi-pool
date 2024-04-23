@@ -1,0 +1,33 @@
+### Changelog All notable changes to this project will be documented in this file.
+
+{{#each releases}}
+  {{#if tag}}
+     {{#if href}}
+         ### [{{title}}]({{href}})  - ({{niceDate}})
+    {{else}}
+    ### {{title}} - {{niceDate}}{{/if}}
+  {{/if}}
+
+  {{#if summary}}
+    {{summary}}
+  {{/if}}
+
+  {{#commit-list commits heading='#### Features' message='feature:'}}
+    {{#if subject}}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+    {{/if}}
+  {{/commit-list}}
+
+  {{#commit-list commits heading='#### Fixes' message='fix:'}}
+    {{#if subject}}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+    {{/if}}
+  {{/commit-list}}
+
+  {{#commit-list commits heading='#### Chores' message='chore:'}}
+    {{#if subject}}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+    {{/if}}
+  {{/commit-list}}
+
+{{/each}}
