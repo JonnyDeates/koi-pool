@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.15](https://github.com/JonnyDeates/koi-pool/compare/v0.0.14...v0.0.15)  - (24 April 2024)
+
+#### Chores
+
+- chore: refactors buttons to be simplier. [`4b27fa4`](https://github.com/JonnyDeates/koi-pool/commit/4b27fa4eb48701164c1bd5b4528f6be2cf46d7f8)
+
 ### [v0.0.14](https://github.com/JonnyDeates/koi-pool/compare/v0.0.13...v0.0.14)  - (23 April 2024)
 
 #### Fixes
