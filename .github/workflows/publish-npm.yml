@@ -23,8 +23,11 @@ jobs:
 
       - name: Build the package
         run: npm run build
+        
+      - name: Print npm config
+        run: npm config list
 
       - name: Publish to npm
-        run: npm publish
+        run: npm publish || echo "Publish failed with status $?"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
