@@ -10,7 +10,7 @@ patch=$((patch + 1))
 new_version="${major}.${minor}.${patch}"
 echo "New version: $new_version"
 
-sed -i "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" "package.json"
+sed -i '' "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" "package.json"
 
 echo "Updated package.json to version $new_version"
 

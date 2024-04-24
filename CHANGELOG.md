@@ -1,5 +1,16 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.16](https://github.com/JonnyDeates/koi-pool/compare/v0.0.15...v0.0.16)  - (24 April 2024)
+
+#### Fixes
+
+- fix: Fixes the isActive on buttons, and styling for standard variant. [`d4a9eec`](https://github.com/JonnyDeates/koi-pool/commit/d4a9eec3def2be3a50a646f16bb57db57174a2e0)
+
+#### Chores
+
+- chore: modifies the gitlab action to have more logging. [`736a045`](https://github.com/JonnyDeates/koi-pool/commit/736a0459da18622210ba58a6aaba55d62866ef59)
+- chore: updates the deployment script. [`a022691`](https://github.com/JonnyDeates/koi-pool/commit/a0226919a2ffc6b5c65552eac32fd006d285d8d4)
+
 ### [v0.0.15](https://github.com/JonnyDeates/koi-pool/compare/v0.0.14...v0.0.15)  - (24 April 2024)
 
 #### Chores
