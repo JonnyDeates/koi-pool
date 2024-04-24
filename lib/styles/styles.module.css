@@ -1,10 +1,12 @@
 .standard.active {
     background-color: #C0C0C0;
 }
-.standard.hover {
+.standard:hover {
     background-color: #D9D9D9;
 }
-
+.standard:active {
+    background-color: #C0C0C0;
+}
 .accept.active {
     background-color: #76E88D;
 }

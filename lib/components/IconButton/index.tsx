@@ -20,7 +20,7 @@ export function IconButton(iconButtonProps: IconButtonProps) {
     disabled,
     ...standardProps
   } = iconButtonProps;
-  const activeClassName = isActive ? `${styles.active}` : '';
+  const activeClassName = isActive ? `${globalStyles.active}` : '';
   const activeVariant = disabled ? 'disabled' : variant;
 
   return <button className={`${styles.ButtonIcon} ${globalStyles[activeVariant]} ${className} ${activeClassName}`}

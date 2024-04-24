@@ -19,7 +19,7 @@ export function LabeledIconButton(buttonProps: LabeledIconButtonProps) {
     ...standardProps
   } = buttonProps;
 
-  const activeClassName = isActive ? `${styles.active}` : '';
+  const activeClassName = isActive ? `${globalStyles.active}` : '';
   const activeVariant = disabled ? "disabled" : variant;
 
   return <button
