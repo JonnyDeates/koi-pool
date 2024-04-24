@@ -22,17 +22,10 @@ export function LabeledIconButton(buttonProps: LabeledIconButtonProps) {
   const activeClassName = isActive ? `${styles.active}` : '';
   const activeVariant = disabled ? "disabled" : variant;
 
-  switch (activeVariant) {
-    case 'disabled':
-      return <button className={`${styles.LabeledIconButton}  ${globalStyles[activeVariant]}  ${className}`} disabled {...standardProps} >
-        <img src={src} alt={alt ?? label}/>
-        <span>{label}</span>
-      </button>;
-    default:
-      return <button
-        className={`${styles.LabeledIconButton}  ${globalStyles[activeVariant]} ${className} ${activeClassName}`} {...standardProps}>
-        <img src={src} alt={alt ?? label}/>
-        <span>{label}</span>
-      </button>;
-  }
+  return <button
+    className={`${styles.LabeledIconButton}  ${globalStyles[activeVariant]} ${className} ${activeClassName}`}
+    disabled={disabled} {...standardProps}>
+    <img src={src} alt={alt ?? label}/>
+    <span>{label}</span>
+  </button>;
 }
