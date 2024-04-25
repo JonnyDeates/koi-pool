@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.17](https://github.com/JonnyDeates/koi-pool/compare/v0.0.16...v0.0.17)  - (25 April 2024)
+
+#### Features
+
+- feature: adds some baseline inputs. [`b03d0e6`](https://github.com/JonnyDeates/koi-pool/commit/b03d0e606a7cfe0702c54dcc2bea1a574464d774)
+
 ### [v0.0.16](https://github.com/JonnyDeates/koi-pool/compare/v0.0.15...v0.0.16)  - (24 April 2024)
 
 #### Fixes
