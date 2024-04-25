@@ -22,11 +22,14 @@ export function FloatingLabelInputWithButton({
 
   const {className = '', variant = 'accept'} = buttonProps;
 
-  const currentVariant = !inputProps.value ? 'disabled' : variant
+
+  const isButtonDisabled = !inputProps.value
+  const currentVariant = isButtonDisabled ? 'disabled' : variant
 
 
   return <FloatingLabelInput {...divProps} {...inputProps} label={label}>
     <Button {...buttonProps} className={`${styles.FloatingLabelInputButton} ${className}`} variant={currentVariant}
+            disabled={isButtonDisabled}
             onClick={onClick}>+</Button>
   </FloatingLabelInput>
   
