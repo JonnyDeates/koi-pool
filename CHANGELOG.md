@@ -1,5 +1,20 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.19](https://github.com/JonnyDeates/koi-pool/compare/v0.0.18...v0.0.19)  - (25 April 2024)
+
+#### Features
+
+- feature: FloatingLabelInputWithButton will auto be disabled if value is not [`5e59435`](https://github.com/JonnyDeates/koi-pool/commit/5e59435ba4574f7eb7650fddcf0c66b8152efc7e)
+
+#### Fixes
+
+- fix: Refactors modals, and fixes classNames for modals. [`5e297d6`](https://github.com/JonnyDeates/koi-pool/commit/5e297d641525a08f10ccb15fd87707d769bff813)
+
+#### Chores
+
+- chore: cleans up the css for modals. [`f6efaf4`](https://github.com/JonnyDeates/koi-pool/commit/f6efaf443f8ce17ab0f96c48a39bcec30f3f2dcd)
+- chore: adds npm run build, at the start of the deploy script. [`574ae75`](https://github.com/JonnyDeates/koi-pool/commit/574ae75b652c2bc52e95efd99908aa386ba41666)
+
 ### [v0.0.18](https://github.com/JonnyDeates/koi-pool/compare/v0.0.17...v0.0.18)  - (25 April 2024)
 
 #### Fixes
