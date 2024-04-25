@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.18](https://github.com/JonnyDeates/koi-pool/compare/v0.0.17...v0.0.18)  - (25 April 2024)
+
+#### Fixes
+
+- fix: fixes floating label with buttons styling. [`ba15351`](https://github.com/JonnyDeates/koi-pool/commit/ba153513ab28dd90e4713662a57196f6199345bf)
+
 ### [v0.0.17](https://github.com/JonnyDeates/koi-pool/compare/v0.0.16...v0.0.17)  - (25 April 2024)
 
 #### Features
