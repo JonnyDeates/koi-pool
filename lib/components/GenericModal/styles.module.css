@@ -58,7 +58,7 @@
 }
 
 .ModalCard .ModalBody {
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .ModalCard .Divider {

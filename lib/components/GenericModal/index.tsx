@@ -1,9 +1,9 @@
 
 import { HTMLAttributes, ReactNode, useState } from "react";
 import styles from './styles.module.css'
-import { CloseButton } from "../CloseButton";
+import { CloseButton } from "../Buttons/CloseButton";
 import React from "react";
-import { Button } from "../Button";
+import { Button } from "../Buttons/Button";
 
 
 export type GenericModalBaseProps = {
@@ -97,7 +97,7 @@ export function GenericAcceptanceModal({
         actionButtons={
             [
                 <Button variant="cancel" onClick={handleClose}>Cancel</Button>,
-                <Button onClick={handleSubmit}>Submit</Button>
+                <Button variant="accept" onClick={handleSubmit}>Submit</Button>
             ]
         }>
         {children}
