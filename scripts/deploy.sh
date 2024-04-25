@@ -1,3 +1,5 @@
+npm run build
+
 current_version=$(node -p "require('./package.json').version")
 
 IFS='.' read -ra VERSION <<< "$current_version"
