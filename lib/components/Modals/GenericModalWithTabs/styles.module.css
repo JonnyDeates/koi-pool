@@ -1,61 +1,31 @@
-.ModalContent {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    align-content: space-between;
-    height: 100%;
-}
-
-.ModalHeader {
-    text-align: center;
-    color: #000;
-    margin: 0;
-}
-
-.ModalBody {
-    overflow-y: auto;
-}
-
-..Divider {
-    border: 1.5px solid rgba(0, 0, 0, 0.17);
-    margin: 8px 0; 
-}
-
-.ModalActionGroup {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-height: fit-content;
-    border-top: 1.5px solid #00000034;
-
-}
-.ModalCard .ModalTabs {
+.ModalTabs {
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1.5px solid #00000034;
 }
-.ModalCard .ModalTabs > h1:hover {
+.ModalTabs > h1:hover {
     background-color: #D9D9D950;
 }
-.ModalCard .ModalTabs .TabActive {
+.ModalTabs .TabActive {
     border-top: 1.5px solid #00000034;
 }
-.ModalCard .ModalTabs .TabActive:first-child {
+.ModalTabs .TabActive:first-child {
     border-left: 1.5px solid #00000034;
 }
-.ModalCard .ModalTabs .TabActive:last-child {
+.ModalTabs .TabActive:last-child {
     border-right: 1.5px solid #00000034;
 }
-.ModalCard .ModalTabs > h1 {
+.ModalTabs > h1 {
     margin: 0;
     padding: 1rem 0;
     cursor: pointer;
 }
-.ModalCard .ModalTabs > h1:not(:last-child) {
+.ModalTabs > h1:not(:last-child) {
     border-right: 1.5px solid #00000034;
 }
-.ModalCard .ModalTabs > h1:first-child {
+.ModalTabs > h1:first-child {
     border-top-left-radius: 8px;
 }
-.ModalCard .ModalTabs > h1:last-child {
+.ModalTabs > h1:last-child {
     border-top-right-radius: 8px;
 }

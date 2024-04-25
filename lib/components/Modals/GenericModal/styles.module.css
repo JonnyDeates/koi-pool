@@ -1,72 +1,26 @@
-.ModalWrapper {
-    position: fixed;
-    background: #00000099;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    justify-content: center;
-    left: 0;
-    z-index: 1;
-    display: inline-flex;
-}
-
-.ModalCard {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    background-color: white;
-    overflow-y: auto;
-    margin-top: 1rem;
-    border-radius: 16px;
-    min-height: 300px;
-    height: 85vh;
-    max-height: 750px;
-    min-width: 300px;
-    width: 80vw;
-    max-width: 750px;
-    padding: 16px;
-    z-index: 2;
-    /*animation: 2s popIn forwards;*/
-}
-.ModalCard .ModalContent {
+.ModalContent {
     display: grid;
     grid-template-rows: auto 1fr auto;
     align-content: space-between;
     height: 100%;
 }
 
-.ModalCard .Close {
-    position: absolute;
-    cursor: pointer;
-    left: 0;
-    top: 0;
-    margin: 1rem;
-    border: unset;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    color: dimgray;
-    font-weight: bolder;
-    background-color: unset;
-}
-
-.ModalCard .ModalHeader {
+.ModalHeader {
     text-align: center;
     color: #000;
     margin: 0;
 }
 
-.ModalCard .ModalBody {
+.ModalBody {
     overflow-y: auto;
 }
 
-.ModalCard .Divider {
+..Divider {
     border: 1.5px solid rgba(0, 0, 0, 0.17);
     margin: 8px 0; 
 }
 
-.ModalCard .ModalActionGroup {
+.ModalActionGroup {
     display: flex;
     justify-content: space-between;
     width: 100%;

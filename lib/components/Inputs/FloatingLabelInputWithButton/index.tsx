@@ -27,7 +27,7 @@ export function FloatingLabelInputWithButton({
 
   return <FloatingLabelInput {...divProps} {...inputProps} label={label}>
     <Button {...buttonProps} className={`${styles.FloatingLabelInputButton} ${className}`} variant={currentVariant}
-            onClick={onClick}>+</Button>/
+            onClick={onClick}>+</Button>
   </FloatingLabelInput>
   
 }

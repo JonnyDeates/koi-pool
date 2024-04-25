@@ -1,4 +1,5 @@
-import './styles/styles.module.css'
+import './styles/styles.module.css';
+
 // Buttons
 export { Button } from './components/Buttons/Button'
 export { LabeledIconButton } from './components/Buttons/LabeledIconButton'
@@ -13,4 +14,7 @@ export {FloatingLabelInput} from './components/Inputs/FloatingLabelInput'
 export {FloatingLabelInputWithButton} from './components/Inputs/FloatingLabelInputWithButton'
 
 // Modals
-export { GenericModal, GenericAcceptanceModal, GenericModalBase, GenericModalWithTabs } from './components/GenericModal'
+export { GenericModal } from './components/Modals/GenericModal'
+export { GenericAcceptanceModal } from './components/Modals/GenericAcceptanceModal'
+export { GenericModalBase } from './components/Modals/GenericModalBase'
+export { GenericModalWithTabs } from './components/Modals/GenericModalWithTabs'
