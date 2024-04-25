@@ -1,6 +1,6 @@
 import {DetailedHTMLProps, FocusEventHandler, HTMLAttributes, LabelHTMLAttributes, useState} from "react";
 import {Input, InputProps} from "../Input";
-import './FloatingLabelInput.css'
+import styles from './styles.module.css'
 
 export type FloatingLabelInputProps =
   {
@@ -30,8 +30,8 @@ export function FloatingLabelInput({divProps = {}, label, labelProps = {},childr
     setIsFloating(!!inputProps.value)
   };
 
-  return <div className={`FloatingLabelInput ${className}`} {...divProps}>
-    <label className={`FloatingLabel ${isFloating ? "float" : ""} ${labelClassName}`} {...labelProps}>
+  return <div className={`${styles.FloatingLabelInput} ${className}`} {...divProps}>
+    <label className={`${styles.FloatingLabel} ${isFloating ? `${styles.float}` : ""} ${labelClassName}`} {...labelProps}>
       {label}
     </label>
     <Input onFocus={handleFocus} onBlur={handleBlur} {...inputProps}/>
