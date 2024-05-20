@@ -1,4 +1,4 @@
 
 
 
-export type VariantsType = 'standard' | 'accept' | 'cancel' | 'disabled'
+export type VariantsType = 'standard' | 'accept' | "caution" | 'cancel' | 'disabled'

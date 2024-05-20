@@ -1,0 +1,69 @@
+.TripleIconActionButtonWrapper {
+    position: relative;
+    padding: 0;
+    margin: 4px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 4px #00000017;
+}
+.TripleIconActionButton {
+    position: absolute;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    transform: translate3d(-25%,-25%,0);
+}
+.Background{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+}
+
+.Content img{
+    width: 35px;
+    height: 35px;
+    user-select: none;
+}
+.Background {
+    cursor: pointer;
+}
+.First .Background {
+    transform: rotate(240deg) skewY(30deg);
+    background: #fff;
+}
+.Second .Background {
+    transform: rotate(0deg) skewY(30deg);
+    background: #00000033;
+}
+.Third .Background {
+    transform: rotate(120deg) skewY(30deg);
+    background: #00000055;
+}
+.Background:active, .Content:active ~ .Background {
+    box-shadow: 1px 1px 4px 2px #00000034 inset;
+}
+.Content {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.First .Content {
+    left: 30%;
+    top: 33%;
+    transform: rotate3d(0, 0, 1,-45deg);
+}
+.Second .Content {
+    left: 52%;
+    top: 33%;
+    transform: rotate3d(0, 0, 1,45deg);
+}
+.Third .Content {
+    bottom: 26%;
+    left: 41.5%;
+}
