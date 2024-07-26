@@ -27,7 +27,7 @@ export function FloatingLabelInputWithButton({
   const currentVariant = isButtonDisabled ? 'disabled' : variant
 
 
-  return <FloatingLabelInput {...divProps} {...inputProps} label={label}>
+  return <FloatingLabelInput divProps={divProps} {...inputProps} label={label} labelProps={labelProps}>
     <Button {...buttonProps} className={`${styles.FloatingLabelInputButton} ${className}`} variant={currentVariant}
             disabled={isButtonDisabled}
             onClick={onClick}>+</Button>
