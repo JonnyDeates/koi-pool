@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.23](https://github.com/JonnyDeates/koi-pool/compare/v0.0.22...v0.0.23)  - (26 July 2024)
+
+#### Fixes
+
+- fix: Updates the className to not join with the wrapper, removes the ability for user to scroll when modal is open. [`cb8bc02`](https://github.com/JonnyDeates/koi-pool/commit/cb8bc02502efe809f24378b76aac89a5804ce94c)
+
 ### [v0.0.22](https://github.com/JonnyDeates/koi-pool/compare/v0.0.19...v0.0.22)  - (26 July 2024)
 
 #### Features
