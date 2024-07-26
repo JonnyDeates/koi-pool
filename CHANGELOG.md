@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.25](https://github.com/JonnyDeates/koi-pool/compare/v0.0.24...v0.0.25)  - (26 July 2024)
+
+#### Fixes
+
+- fix: Fixes close button for all modals to be on the right side, instead of left. [`fb02edc`](https://github.com/JonnyDeates/koi-pool/commit/fb02edc55e376ff74e13fc0047a2e615f6ec5e83)
+
 ### [v0.0.24](https://github.com/JonnyDeates/koi-pool/compare/v0.0.23...v0.0.24)  - (26 July 2024)
 
 #### Fixes
