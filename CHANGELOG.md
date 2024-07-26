@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.24](https://github.com/JonnyDeates/koi-pool/compare/v0.0.23...v0.0.24)  - (26 July 2024)
+
+#### Fixes
+
+- fix: Fixes floating label input button to properly pass props down to the corresponding places. [`88c9caf`](https://github.com/JonnyDeates/koi-pool/commit/88c9caf0328744654dde731bae42dc1ef5955b83)
+
 ### [v0.0.23](https://github.com/JonnyDeates/koi-pool/compare/v0.0.22...v0.0.23)  - (26 July 2024)
 
 #### Fixes
