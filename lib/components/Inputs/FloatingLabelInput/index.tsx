@@ -30,11 +30,11 @@ export function FloatingLabelInput({divProps = {}, label, labelProps = {},childr
     setIsFloating(!!inputProps.value)
   };
 
-  return <div className={`${styles.FloatingLabelInput} ${className}`} {...divProps}>
-    <label className={`${styles.FloatingLabel} ${isFloating ? `${styles.float}` : ""} ${labelClassName}`} {...labelProps}>
+  return <div {...divProps} className={`${styles.FloatingLabelInput} ${className}`} >
+    <label {...labelProps} className={`${styles.FloatingLabel} ${isFloating ? `${styles.float}` : ""} ${labelClassName}`} >
       {label}
     </label>
-    <Input onFocus={handleFocus} onBlur={handleBlur} {...inputProps}/>
+    <Input {...inputProps} onFocus={handleFocus} onBlur={handleBlur} />
     {children}
   </div>
 }

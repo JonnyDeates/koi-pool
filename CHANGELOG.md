@@ -1,5 +1,21 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.21](https://github.com/JonnyDeates/koi-pool/compare/v0.0.19...v0.0.21)  - (26 July 2024)
+
+#### Features
+
+- feature: adds TripleIconActionButton, and caution variant. [`ee92146`](https://github.com/JonnyDeates/koi-pool/commit/ee92146e86a72f9b68e057f26b64d37582ab9748)
+
+#### Fixes
+
+- fix: fixes input with button by making the button not clickable when disabled. [`552d807`](https://github.com/JonnyDeates/koi-pool/commit/552d8071c668a4c865b89c78d51327def79ba1dd)
+
+#### Chores
+
+- chore: updates package.json dependencies. [`b116dca`](https://github.com/JonnyDeates/koi-pool/commit/b116dca0a2f81f6e6e2c53e7d6fdd48b8b9551e7)
+- chore: updates the deploy.sh script [`c9c12de`](https://github.com/JonnyDeates/koi-pool/commit/c9c12de01b8bb4354bea2cb762bcdd002745b99d)
+- chore: refactors .Input to not include range inputs. [`9e8727e`](https://github.com/JonnyDeates/koi-pool/commit/9e8727ecc445cd35b66e6dd28052ee3648e609e0)
+
 ### [v0.0.19](https://github.com/JonnyDeates/koi-pool/compare/v0.0.18...v0.0.19)  - (25 April 2024)
 
 #### Features
