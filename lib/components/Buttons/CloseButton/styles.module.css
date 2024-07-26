@@ -11,7 +11,7 @@
     color: #00000068;
     position: absolute;
     top: 16px;
-    left: 16px;
+    right: 16px;
 }
 
 .CloseButton:hover {
