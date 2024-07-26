@@ -1,6 +1,6 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
-### [v0.0.21](https://github.com/JonnyDeates/koi-pool/compare/v0.0.19...v0.0.21)  - (26 July 2024)
+### [v0.0.22](https://github.com/JonnyDeates/koi-pool/compare/v0.0.19...v0.0.22)  - (26 July 2024)
 
 #### Features
 
@@ -9,6 +9,7 @@
 #### Fixes
 
 - fix: fixes input with button by making the button not clickable when disabled. [`552d807`](https://github.com/JonnyDeates/koi-pool/commit/552d8071c668a4c865b89c78d51327def79ba1dd)
+- fix: Updates floating label icon to take classnames. [`63a4ed5`](https://github.com/JonnyDeates/koi-pool/commit/63a4ed5691db285a5610db6cd4e345e9c76733b2)
 
 #### Chores
 
