@@ -7,3 +7,7 @@
     box-shadow: 2px 2px 4px 4px #00000017;
     border: unset;
 }
+.InputError {
+    border: #E88D76 2px solid;
+    background-color: #EFB1A2;
+}

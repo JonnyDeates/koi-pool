@@ -1,5 +1,7 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.27](https://github.com/JonnyDeates/koi-pool/compare/v0.0.25...v0.0.27)  - (30 August 2024)
+
 ### [v0.0.25](https://github.com/JonnyDeates/koi-pool/compare/v0.0.24...v0.0.25)  - (26 July 2024)
 
 #### Fixes
