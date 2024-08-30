@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.29](https://github.com/JonnyDeates/koi-pool/compare/v0.0.28...v0.0.29)  - (30 August 2024)
+
+#### Fixes
+
+- fix: makes errorProps optional. [`b2ab348`](https://github.com/JonnyDeates/koi-pool/commit/b2ab34812c40aaca0ec922dc0db3727752d3abd1)
+
 ### [v0.0.28](https://github.com/JonnyDeates/koi-pool/compare/v0.0.27...v0.0.28)  - (30 August 2024)
 
 #### Features
