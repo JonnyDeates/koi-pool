@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.30](https://github.com/JonnyDeates/koi-pool/compare/v0.0.29...v0.0.30)  - (30 August 2024)
+
+#### Fixes
+
+- fix: Updates the input error text once more. [`1450c6b`](https://github.com/JonnyDeates/koi-pool/commit/1450c6bf2ece80b02fd81ee0b69a3bf8b8f2bf9b)
+
 ### [v0.0.29](https://github.com/JonnyDeates/koi-pool/compare/v0.0.28...v0.0.29)  - (30 August 2024)
 
 #### Fixes
