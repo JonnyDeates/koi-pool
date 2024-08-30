@@ -1,5 +1,15 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.28](https://github.com/JonnyDeates/koi-pool/compare/v0.0.27...v0.0.28)  - (30 August 2024)
+
+#### Features
+
+- feature: updates input to include additional props and error text. [`7fe7b22`](https://github.com/JonnyDeates/koi-pool/commit/7fe7b22bc878491ed7f0cb2d1c7cf484d1ae6fbb)
+
+#### Fixes
+
+- fix: updates disabled button to have the disabled look. [`cb7a9c3`](https://github.com/JonnyDeates/koi-pool/commit/cb7a9c34bcf068fefc5f08fd8c78f615e1845976)
+
 ### [v0.0.27](https://github.com/JonnyDeates/koi-pool/compare/v0.0.25...v0.0.27)  - (30 August 2024)
 
 ### [v0.0.25](https://github.com/JonnyDeates/koi-pool/compare/v0.0.24...v0.0.25)  - (26 July 2024)
