@@ -14,7 +14,7 @@ export function Button(buttonProps: ButtonProps) {
   const activeClassName = isActive ? `${globalStyles.active}` : '';
   const activeVariant = disabled ? "disabled" : variant;
 
-  return <button className={`${styles.Button} ${globalStyles[activeVariant]} ${className} ${activeClassName}`}
+  return <button className={`${globalStyles[activeVariant]} ${styles.Button}  ${className} ${activeClassName}`}
                  disabled={disabled} {...standardProps}>
     {children}
   </button>;
