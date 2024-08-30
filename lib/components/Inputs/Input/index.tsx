@@ -16,7 +16,7 @@ export function Input(props: InputProps) {
     return <div className={styles.InputWrapper}>
         <input style={{...props.style, width, height}}  {...props} className={inputClassName}/>
         {error
-            ? <p {...errorProps} className={`${styles.Error} ${errorClassName}`}>{error}</p>
+            ? <p style={{width: width}} {...errorProps} className={`${styles.Error} ${errorClassName}`}>{error}</p>
             : <></>}
     </div>
 }

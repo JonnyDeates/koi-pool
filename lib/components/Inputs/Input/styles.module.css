@@ -4,7 +4,7 @@
     padding: 16px;
 }
 .InputError {
-     border: #E88D76 1px solid;
+     border: red 2px solid !important;
      background-color: #EFB1A2;
  }
 .Input:not([type="range"]) {
@@ -16,6 +16,6 @@
     position: relative;
 }
 .Error {
-    position: absolute;
-    bottom: -16px;
+    position: relative;
+    color: red;
 }
