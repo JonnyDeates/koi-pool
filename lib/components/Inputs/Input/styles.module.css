@@ -3,11 +3,19 @@
     border-radius: 8px;
     padding: 16px;
 }
+.InputError {
+     border: #E88D76 1px solid;
+     background-color: #EFB1A2;
+ }
 .Input:not([type="range"]) {
     box-shadow: 2px 2px 4px 4px #00000017;
-    border: unset;
+    border: 1px none;
 }
-.InputError {
-    border: #E88D76 2px solid;
-    background-color: #EFB1A2;
+.InputWrapper {
+    display: block;
+    position: relative;
+}
+.Error {
+    position: absolute;
+    bottom: -16px;
 }

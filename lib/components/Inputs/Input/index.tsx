@@ -1,13 +1,22 @@
-import {InputHTMLAttributes} from "react";
+import {HTMLAttributes, InputHTMLAttributes} from "react";
 import styles from './styles.module.css'
 
-export type InputProps = InputHTMLAttributes<HTMLInputElement> & { error?: string }
+export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
+    error?: string,
+    errorProps: HTMLAttributes<HTMLParagraphElement>
+}
 
 export function Input(props: InputProps) {
-    const {className = '', width = "90px", height = "fit-content", error = ''} = props;
+    const {className = '', width = "90px", height = "fit-content", error = '', errorProps} = props;
+    const {className: errorClassName = ''} = errorProps;
 
-    const errorClassName = error.length > 0 ? styles.InputError : ''
-    const inputClassName = `${styles.Input} ${errorClassName} ${className}`
+    const inputErrorClassName = error.length > 0 ? styles.InputError : ''
+    const inputClassName = `${styles.Input} ${inputErrorClassName} ${className}`
 
-    return <input style={{...props.style, width, height}}  {...props} className={inputClassName}/>
+    return <div className={styles.InputWrapper}>
+        <input style={{...props.style, width, height}}  {...props} className={inputClassName}/>
+        {error
+            ? <p {...errorProps} className={`${styles.Error} ${errorClassName}`}>{error}</p>
+            : <></>}
+    </div>
 }
