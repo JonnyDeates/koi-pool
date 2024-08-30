@@ -3,11 +3,11 @@ import styles from './styles.module.css'
 
 export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     error?: string,
-    errorProps: HTMLAttributes<HTMLParagraphElement>
+    errorProps?: HTMLAttributes<HTMLParagraphElement>
 }
 
 export function Input(props: InputProps) {
-    const {className = '', width = "90px", height = "fit-content", error = '', errorProps} = props;
+    const {className = '', width = "90px", height = "fit-content", error = '', errorProps = {}} = props;
     const {className: errorClassName = ''} = errorProps;
 
     const inputErrorClassName = error.length > 0 ? styles.InputError : ''
