@@ -1,8 +1,13 @@
-import {useState, type HTMLAttributes} from "react";
+import {useState, type HTMLAttributes, type KeyboardEvent, type FormEvent} from "react";
 import styles from "./styles.module.css";
-import {handleSubmitEnter} from "../../../../koi-goal-keeper/packages/shared";
 import {Option} from "./Option";
 
+const handleSubmitEnter = (event: KeyboardEvent, callback: (event: FormEvent<HTMLFormElement>) => void) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        callback(event as KeyboardEvent<HTMLFormElement>);
+    }
+};
 export interface SelectProps<T> extends Omit<HTMLAttributes<HTMLDivElement>, 'onClick'> {
     options: Record<string, T> | T[],
     selectedOption: T,

@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.31](https://github.com/JonnyDeates/koi-pool/compare/v0.0.30...v0.0.31)  - (28 September 2024)
+
+#### Features
+
+- feature: Adds Select dropdown. [`a7b4e98`](https://github.com/JonnyDeates/koi-pool/commit/a7b4e986db118d72712a75eaea0c5a31aefd0ec7)
+
 ### [v0.0.30](https://github.com/JonnyDeates/koi-pool/compare/v0.0.29...v0.0.30)  - (30 August 2024)
 
 #### Fixes
