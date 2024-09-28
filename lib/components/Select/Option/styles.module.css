@@ -1,0 +1,22 @@
+.SelectedOption {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.Option {
+    display: flex;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.Option:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.Option:hover {
+    background-color: #d3d3d3;
+}
+.Option.active {
+   background-color: #777777;
+}
