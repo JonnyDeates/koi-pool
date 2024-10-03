@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.32](https://github.com/JonnyDeates/koi-pool/compare/v0.0.31...v0.0.32)  - (3 October 2024)
+
+#### Fixes
+
+- fix: Fixes spacing around the add button on the floating input. [`aa9d228`](https://github.com/JonnyDeates/koi-pool/commit/aa9d228a20f946ced799a4513904633e5c0b216e)
+
 ### [v0.0.31](https://github.com/JonnyDeates/koi-pool/compare/v0.0.30...v0.0.31)  - (28 September 2024)
 
 #### Features
