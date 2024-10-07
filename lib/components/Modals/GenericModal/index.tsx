@@ -4,7 +4,7 @@ import {GenericModalBase, GenericModalBaseProps} from "../GenericModalBase";
 
 
 export type GenericModalProps = GenericModalBaseProps & {
-  title: ReactNode,
+  title?: ReactNode,
   actionButtons?: ReactNode[],
   actionGroupAttributes?: HTMLAttributes<HTMLDivElement>
   bodyAttributes?: HTMLAttributes<HTMLDivElement>
