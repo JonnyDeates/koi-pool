@@ -1,6 +1,6 @@
 import {useState, type HTMLAttributes, type KeyboardEvent, type FormEvent} from "react";
 import styles from "./styles.module.css";
-import {Option} from "./Option";
+import {Option, OptionProps} from "./Option";
 
 const handleSubmitEnter = (event: KeyboardEvent, callback: (event: FormEvent<HTMLFormElement>) => void) => {
     if (event.key === "Enter") {
@@ -15,7 +15,7 @@ export interface SelectProps<T> extends Omit<HTMLAttributes<HTMLDivElement>, 'on
     containerAttributes?: HTMLAttributes<HTMLDivElement>,
     backdropAttributes?: HTMLAttributes<HTMLDivElement>,
     selectedOptionAttributes?: HTMLAttributes<HTMLDivElement>,
-    optionAttributes?: Omit<HTMLAttributes<HTMLDivElement>, 'value' | 'onClick'>
+    optionAttributes?: Partial<OptionProps<T>>
 }
 
 export function Select<T extends string | number | symbol, >(
