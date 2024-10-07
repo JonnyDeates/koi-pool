@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.34](https://github.com/JonnyDeates/koi-pool/compare/v0.0.33...v0.0.34)  - (7 October 2024)
+
+#### Features
+
+- feature: Added more customization to genericAcceptanceModal, and the generic modal. [`11a3613`](https://github.com/JonnyDeates/koi-pool/commit/11a3613126052115ba4c2f430fbcf3e5ba7d740c)
+
 ### [v0.0.33](https://github.com/JonnyDeates/koi-pool/compare/v0.0.32...v0.0.33)  - (7 October 2024)
 
 ### [v0.0.32](https://github.com/JonnyDeates/koi-pool/compare/v0.0.31...v0.0.32)  - (3 October 2024)
