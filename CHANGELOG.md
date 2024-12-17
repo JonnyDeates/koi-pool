@@ -1,5 +1,15 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.35](https://github.com/JonnyDeates/koi-pool/compare/v0.0.34...v0.0.35)  - (17 December 2024)
+
+#### Features
+
+- feature: Updates modalBase to use react portals [`5c8290d`](https://github.com/JonnyDeates/koi-pool/commit/5c8290dcc7b86f81ede5fcae8ce5bc5978d9e251)
+
+#### Chores
+
+- chore: Updates packages, and fixes vulnerablities, also removes eslint. [`39bfc0d`](https://github.com/JonnyDeates/koi-pool/commit/39bfc0d66cd470bf13acbcc814a5013fc6ccfc6d)
+
 ### [v0.0.34](https://github.com/JonnyDeates/koi-pool/compare/v0.0.33...v0.0.34)  - (7 October 2024)
 
 #### Features
