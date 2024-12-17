@@ -1,6 +1,13 @@
 #!/bin/bash
 
 npm run build
+if [ $? -eq 0 ]
+then
+  echo "SUCCESSFUL BUILD"
+else
+  echo "FAILED TO BUILD"
+  exit 1
+fi
 
 current_version=$(node -p "require('./package.json').version")
 
