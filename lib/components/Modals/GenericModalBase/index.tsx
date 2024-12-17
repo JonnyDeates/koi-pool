@@ -1,4 +1,5 @@
-import {HTMLAttributes, ReactNode, useEffect} from "react"
+import {createElement, HTMLAttributes, ReactNode, useEffect} from "react"
+import {createPortal} from "react-dom";
 import {CloseButton} from "../../Buttons/CloseButton"
 import styles from './styles.module.css'
 
@@ -15,6 +16,8 @@ export function GenericModalBase({
                                      modalAttributes = {},
                                      modalWrapperAttributes = {}
                                  }: GenericModalBaseProps) {
+
+
     useEffect(() => {
         if (isOpen) {
             document.body.style.maxHeight = '100vh';
@@ -36,11 +39,12 @@ export function GenericModalBase({
     const {className = ''} = modalAttributes
     const {className: modalWrapperClassName = ''} = modalWrapperAttributes
 
-    return <>
-        <div role='presentation' className={`${styles.ModalWrapper} ${modalWrapperClassName}`} onClick={handleClose}/>
-        <div {...modalAttributes} className={`${styles.ModalCard} ${className}`}>
-            <CloseButton onClick={handleClose}/>
-            {children}
-        </div>
-    </>
+
+    return createPortal(<React.Fragment>
+                    <div role='presentation' className={`${styles.ModalWrapper} ${modalWrapperClassName}`} onClick={handleClose}/>
+                    <div {...modalAttributes} className={`${styles.ModalCard} ${className}`}>
+                        <CloseButton onClick={handleClose}/>
+                        {children}
+                    </div>
+                </React.Fragment> as ReactNode, document.body)
 }
