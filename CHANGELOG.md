@@ -1,5 +1,15 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.36](https://github.com/JonnyDeates/koi-pool/compare/v0.0.35...v0.0.36)  - (18 December 2024)
+
+#### Features
+
+- feature: Updates modalBase to use react portals [`bde1518`](https://github.com/JonnyDeates/koi-pool/commit/bde1518ae0dd963bf979dcc6b07bc48b20019c42)
+
+#### Chores
+
+- chore: updates modalcard to have position fixed, so it stays on screen. [`d6c78c3`](https://github.com/JonnyDeates/koi-pool/commit/d6c78c332f5435354ec8447daa10edbbbe07798a)
+
 ### [v0.0.35](https://github.com/JonnyDeates/koi-pool/compare/v0.0.34...v0.0.35)  - (17 December 2024)
 
 #### Features
