@@ -14,7 +14,6 @@ export {SpacedLabelInput} from './components/Inputs/SpacedLabelInput';
 export {FloatingLabelInput} from './components/Inputs/FloatingLabelInput'
 export {FloatingLabelInputWithButton} from './components/Inputs/FloatingLabelInputWithButton'
 
-
 // Labels
 export {FloatingLabel} from './components/Labels/FloatingLabel'
 

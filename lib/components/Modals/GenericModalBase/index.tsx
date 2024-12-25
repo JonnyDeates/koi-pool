@@ -40,14 +40,12 @@ export function GenericModalBase({
     const {className: modalWrapperClassName = ''} = modalWrapperAttributes
 
 
-    return <>
-        {createPortal(<>
+    return createPortal(<>
                     <div role='presentation' className={`${styles.ModalWrapper} ${modalWrapperClassName}`} onClick={handleClose}/>
                     <div {...modalAttributes} className={`${styles.ModalCard} ${className}`}>
                         <CloseButton onClick={handleClose}/>
                         {children}
                     </div>
                 </> as ReactNode, document.body)
-        }
-    </>
+
 }
