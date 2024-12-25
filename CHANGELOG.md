@@ -1,5 +1,15 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.38](https://github.com/JonnyDeates/koi-pool/compare/v0.0.37...v0.0.38)  - (25 December 2024)
+
+#### Features
+
+- feature: Splits FloatingLabel to its own component [`5ee0667`](https://github.com/JonnyDeates/koi-pool/commit/5ee06674cdb80c4152f07529b0170535f4d1b63c)
+
+#### Chores
+
+- chore: fixes select's presentation and backdrop. [`7cb7658`](https://github.com/JonnyDeates/koi-pool/commit/7cb765886a73670258efd6a367648125e127bd0a)
+
 ### [v0.0.37](https://github.com/JonnyDeates/koi-pool/compare/v0.0.36...v0.0.37)  - (25 December 2024)
 
 #### Features
