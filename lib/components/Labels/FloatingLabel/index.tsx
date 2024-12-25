@@ -11,7 +11,7 @@ export function FloatingLabel(labelProps: FloatingLabelProps) {
   const {className: labelClassName = ''} = labelProps;
 
   return <label {...standardProps}
-                className={`${styles.FloatingLabel} ${isFloating ? `${styles.float}` : ""} ${labelClassName}`}>
+                className={`${styles.FloatingLabel} ${isFloating ? `${styles.FloatingLabelFloat}` : ""} ${labelClassName}`}>
     {children}
   </label>
 }

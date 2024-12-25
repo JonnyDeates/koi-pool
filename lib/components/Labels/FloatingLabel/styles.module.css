@@ -17,11 +17,10 @@
     transition: transform 0.3s, background-color .3s;
     color: #8D8D8D;
 }
-.FloatingLabel.float {
+.FloatingLabelFloat {
     left: 0;
     top: 0;
     padding: 0 4px;
     height: fit-content;
     transform: scale(0.75) translate(12px, -12px) ;
-
 }
