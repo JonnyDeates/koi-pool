@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.42](https://github.com/JonnyDeates/koi-pool/compare/v0.0.41...v0.0.42)  - (25 December 2024)
+
+#### Fixes
+
+- fix: Updates styling for checked button to match what it should be. [`48da400`](https://github.com/JonnyDeates/koi-pool/commit/48da40032d0d297399dc6b69d60e2a469271e68a)
+
 ### [v0.0.41](https://github.com/JonnyDeates/koi-pool/compare/v0.0.40...v0.0.41)  - (25 December 2024)
 
 #### Fixes
