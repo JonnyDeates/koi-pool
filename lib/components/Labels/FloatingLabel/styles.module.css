@@ -1,0 +1,28 @@
+.FloatingLabel {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 0 4px;
+    transform-origin: left top 0;
+    transform: scale(1) translate(4px, 16px);
+    pointer-events: none;
+    color: #C0C0C0;
+    user-select: none;
+    width: fit-content;
+    border-radius: 4px 4px 0 0;
+    background-color: #ffffff;
+    transition: transform 0.3s, background-color .3s;
+}
+.FloatingLabel.float {
+    left: 0;
+    top: 0;
+    padding: 0 4px;
+    background-color: white;
+    height: fit-content;
+    transform: scale(0.75) translate(12px, -12px) ;
+    color: #8D8D8D;
+}

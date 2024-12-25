@@ -22,7 +22,6 @@ export function FloatingLabelInputWithButton({
 
   const {className = '', variant = 'accept'} = buttonProps;
 
-
   const isButtonDisabled = !inputProps.value
   const currentVariant = isButtonDisabled ? 'disabled' : variant
 

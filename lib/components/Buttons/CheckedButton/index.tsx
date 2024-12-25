@@ -1,16 +1,13 @@
-import {ButtonHTMLAttributes, HTMLAttributes} from 'react'
+import {HTMLAttributes} from 'react'
 import styles from './styles.module.css'
-import {Button} from "../Button";
+import {Button, ButtonProps} from "../Button";
 import checked from './assets/check.svg'
 import unchecked from './assets/unchecked.svg'
-import {VariantsType} from "../../../types/VariantsType.ts";
 
 export type CheckedButtonProps = {
-  variant?: VariantsType,
-  isActive?: boolean,
   wrapperImgProps?: HTMLAttributes<HTMLDivElement>,
   imgProps?: HTMLAttributes<HTMLImageElement>,
-} & ButtonHTMLAttributes<HTMLButtonElement>
+} & ButtonProps
 
 export function CheckedButton(checkedButtonProps: CheckedButtonProps ) {
   const {isActive, children, imgProps = {}, wrapperImgProps = {}, ...buttonProps} = checkedButtonProps
