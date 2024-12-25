@@ -72,7 +72,7 @@ export function Select<T extends string | number | symbol, >(
                          transform,
                          ...style,
                          left: ref.current.getBoundingClientRect().left,
-                         top: ref.current.getBoundingClientRect().top + ref.current.offsetHeight
+                         top: ref.current.getBoundingClientRect().top + window.scrollY + ref.current.offsetHeight
                 }}
                      {...selectAttributesWithoutClassName}>
                     {
