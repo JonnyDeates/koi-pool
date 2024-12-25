@@ -1,6 +1,7 @@
-import {Button, CheckedButton, GenericModalBase, Select} from "../../lib/main";
+import {Button, CheckedButton, FloatingLabelInputWithButton, GenericModalBase, Select} from "../../lib/main";
 
 const App = () => {
+    const noop = ()=>{}
     return (
         <div>
             <Button >Hello</Button>
@@ -14,6 +15,8 @@ const App = () => {
             <GenericModalBase handleClose={()=>{}} isOpen={false}>
             dank
             </GenericModalBase>
+            <FloatingLabelInputWithButton onClick={noop} label={'hmm'} value={'hmm'}/>
+            <FloatingLabelInputWithButton onClick={noop} label={'hmm'} value={'hmm'} style={{width: '30rem'}}/>
         </div>
     );
 };

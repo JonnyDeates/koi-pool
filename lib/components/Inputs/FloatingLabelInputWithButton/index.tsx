@@ -1,12 +1,14 @@
 import styles from './styles.module.css'
 import {FloatingLabelInput, FloatingLabelInputProps} from "../FloatingLabelInput";
 import {Button, ButtonProps } from "../../Buttons/Button";
-import { MouseEventHandler } from 'react';
+import {HTMLAttributes, MouseEventHandler} from 'react';
+import plus from './assets/plus.svg'
 
 type FloatingLabelInputWithButtonProps =
   {
     onClick: MouseEventHandler<HTMLButtonElement> | undefined,
-    buttonProps?: ButtonProps,
+      buttonProps?: ButtonProps,
+      buttonImgProps?: HTMLAttributes<HTMLImageElement>,
   } & FloatingLabelInputProps
 
 export function FloatingLabelInputWithButton({
@@ -15,12 +17,14 @@ export function FloatingLabelInputWithButton({
                                                label,
                                                labelProps,
                                                buttonProps = {},
+                                                 buttonImgProps = {},
                                                ...inputProps
                                              }: FloatingLabelInputWithButtonProps) {
 
 
 
-  const {className = '', variant = 'accept'} = buttonProps;
+    const {className = '', variant = 'accept'} = buttonProps;
+    const {className: imageClassName = ''} = buttonImgProps;
 
   const isButtonDisabled = !inputProps.value
   const currentVariant = isButtonDisabled ? 'disabled' : variant
@@ -29,7 +33,9 @@ export function FloatingLabelInputWithButton({
   return <FloatingLabelInput divProps={divProps} {...inputProps} label={label} labelProps={labelProps}>
     <Button {...buttonProps} className={`${styles.FloatingLabelInputButton} ${className}`} variant={currentVariant}
             disabled={isButtonDisabled}
-            onClick={onClick}>+</Button>
+            onClick={onClick}>
+        <img {...buttonImgProps} src={plus} alt={'+'} className={`${styles.FloatingLabelInputButtonImage} ${imageClassName}`}/>
+    </Button>
   </FloatingLabelInput>
   
 }
