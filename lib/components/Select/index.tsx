@@ -54,7 +54,7 @@ export function Select<T extends string | number | symbol, >(
     return <div className={`${styles.SelectContainer} ${containerClassName}`}
                 {...containerWithoutClassNameAttributes}
     >
-        <div className={`${styles.SelectedOption} ${selectedOptionClassName}`}
+        <div className={`${styles.SelectedOption} ${selectedOptionClassName}`} ref={ref}
              onClick={handleOpenSelect} role={selectedOptionRole} tabIndex={0}
              onKeyDown={(event) => {
                  handleSubmitEnter(event, handleOpenSelect);
