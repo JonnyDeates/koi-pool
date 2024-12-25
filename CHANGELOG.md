@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.39](https://github.com/JonnyDeates/koi-pool/compare/v0.0.38...v0.0.39)  - (25 December 2024)
+
+#### Chores
+
+- chore: Possible fix for genericModalBase bug. [`1032f17`](https://github.com/JonnyDeates/koi-pool/commit/1032f1770bfad8259e9f98b8c54e75f2354c2f92)
+
 ### [v0.0.38](https://github.com/JonnyDeates/koi-pool/compare/v0.0.37...v0.0.38)  - (25 December 2024)
 
 #### Features
