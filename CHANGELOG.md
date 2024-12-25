@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.43](https://github.com/JonnyDeates/koi-pool/compare/v0.0.42...v0.0.43)  - (25 December 2024)
+
+#### Fixes
+
+- fix: fixes the backdrop on the select [`71a0a06`](https://github.com/JonnyDeates/koi-pool/commit/71a0a0602a6172cddd0925dcc9ba20686f49b335)
+
 ### [v0.0.42](https://github.com/JonnyDeates/koi-pool/compare/v0.0.41...v0.0.42)  - (25 December 2024)
 
 #### Fixes
