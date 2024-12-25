@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.44](https://github.com/JonnyDeates/koi-pool/compare/v0.0.43...v0.0.44)  - (25 December 2024)
+
+#### Fixes
+
+- fix: fixes the positioning of the select dropdown when the user scrolls [`2917c01`](https://github.com/JonnyDeates/koi-pool/commit/2917c01aeea0e8134ada4e8221228764bfe168ab)
+
 ### [v0.0.43](https://github.com/JonnyDeates/koi-pool/compare/v0.0.42...v0.0.43)  - (25 December 2024)
 
 #### Fixes
