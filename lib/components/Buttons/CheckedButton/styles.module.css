@@ -1,0 +1,16 @@
+.Checkbox {
+    padding: 4px 4px 2px 4px;
+    box-shadow: 0 1px 2px 2px #00000017;
+    margin: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 0;
+    transition: background-color .12s;
+    height: fit-content;
+    width: fit-content;
+}
+.CheckboxImage{
+    width: 24px;
+    height: 24px;
+}

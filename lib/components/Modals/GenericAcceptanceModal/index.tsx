@@ -36,8 +36,8 @@ export function GenericAcceptanceModal({
         actionButtons={
             isNegative
                 ? [
-                    <Button variant="accept" type='submit' onClick={handleSubmit}>{submitButtonText}</Button>,
-                    <Button variant='cancel' onClick={handleClose}>{cancelButtonText}</Button>
+                    <Button variant="cancel" type='submit' onClick={handleSubmit}>{submitButtonText}</Button>,
+                    <Button variant='accept' onClick={handleClose}>{cancelButtonText}</Button>
                 ]
                 : [
                     <Button variant="cancel" onClick={handleClose}>{cancelButtonText}</Button>,

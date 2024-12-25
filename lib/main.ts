@@ -2,6 +2,7 @@ import './styles/styles.module.css';
 
 // Buttons
 export {Button} from './components/Buttons/Button'
+export {CheckedButton} from './components/Buttons/CheckedButton'
 export {LabeledIconButton} from './components/Buttons/LabeledIconButton'
 export {IconButton} from './components/Buttons/IconButton'
 export {CloseButton} from './components/Buttons/CloseButton'
@@ -22,3 +23,7 @@ export {GenericModalWithTabs} from './components/Modals/GenericModalWithTabs'
 // Selects
 export {Select} from './components/Select'
 export {Option} from './components/Select/Option'
+
+// Types
+export {type VariantsType} from './types/VariantsType'
+
