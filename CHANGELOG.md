@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.37](https://github.com/JonnyDeates/koi-pool/compare/v0.0.36...v0.0.37)  - (25 December 2024)
+
+#### Features
+
+- feature: Created a checkedButton component. [`e7739aa`](https://github.com/JonnyDeates/koi-pool/commit/e7739aaf98152caefd1c9d69f906f46b873a65f6)
+
 ### [v0.0.36](https://github.com/JonnyDeates/koi-pool/compare/v0.0.35...v0.0.36)  - (18 December 2024)
 
 #### Features
