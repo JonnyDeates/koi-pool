@@ -1,6 +1,7 @@
-import {useState, type HTMLAttributes, type KeyboardEvent, type FormEvent} from "react";
+import {useState, type HTMLAttributes, type KeyboardEvent, type FormEvent, useRef} from "react";
 import styles from "./styles.module.css";
 import {Option, OptionProps} from "./Option";
+import {createPortal} from "react-dom";
 
 const handleSubmitEnter = (event: KeyboardEvent, callback: (event: FormEvent<HTMLFormElement>) => void) => {
     if (event.key === "Enter") {
@@ -30,6 +31,7 @@ export function Select<T extends string | number | symbol, >(
     }: SelectProps<T>) {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [startClosingAnimation, setStartClosingAnimation] = useState<boolean>(false);
+    const ref = useRef<HTMLDivElement>(null)
     const handleOpenSelect = () => {
         if (isOpen) {
             setStartClosingAnimation(true);
@@ -59,16 +61,19 @@ export function Select<T extends string | number | symbol, >(
              }} {...selectedOptionAttributesWithoutClassName}>
             {selectedOption.toString()}
         </div>
-        {isOpen ?
-            <>
+        {isOpen && ref.current ? createPortal(<>
                 <div className={`${styles.Backdrop} ${backdropClassName}`}
                      onClick={handleOpenSelect}
                      role={backdropRole}
-                     onKeyDown={(event) => {
-                         handleSubmitEnter(event, handleOpenSelect);
-                     }} {...backdropAttributesWithoutClassName}/>
+                     {...backdropAttributesWithoutClassName}/>
                 <div className={`${styles.Select} ${className}`}
-                     style={{opacity, transform, ...style}}
+                     style={{
+                         opacity,
+                         transform,
+                         ...style,
+                         left: ref.current.getBoundingClientRect().left,
+                         top: ref.current.getBoundingClientRect().top + ref.current.offsetHeight
+                }}
                      {...selectAttributesWithoutClassName}>
                     {
                         Array.isArray(options)
@@ -84,7 +89,7 @@ export function Select<T extends string | number | symbol, >(
                                 </Option>)
                     }
                 </div>
-            </>
+            </>, document.body)
             : <></>
         }
     </div>;
