@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.40](https://github.com/JonnyDeates/koi-pool/compare/v0.0.39...v0.0.40)  - (25 December 2024)
+
+#### Chores
+
+- chore: Added a test bed for the library, updated react versions for build. [`269622a`](https://github.com/JonnyDeates/koi-pool/commit/269622a56b5affb503963baa76c1128e81b1b93c)
+
 ### [v0.0.39](https://github.com/JonnyDeates/koi-pool/compare/v0.0.38...v0.0.39)  - (25 December 2024)
 
 #### Chores
