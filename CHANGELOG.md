@@ -1,5 +1,11 @@
 ### Changelog All notable changes to this project will be documented in this file.
 
+### [v0.0.41](https://github.com/JonnyDeates/koi-pool/compare/v0.0.40...v0.0.41)  - (25 December 2024)
+
+#### Fixes
+
+- fix: Updates the ref for the select to actually be on the select component [`e4161e4`](https://github.com/JonnyDeates/koi-pool/commit/e4161e4f1e777697e2b169e9022335d5464e5030)
+
 ### [v0.0.40](https://github.com/JonnyDeates/koi-pool/compare/v0.0.39...v0.0.40)  - (25 December 2024)
 
 #### Chores
