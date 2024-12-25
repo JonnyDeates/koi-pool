@@ -9,6 +9,7 @@ const App = () => {
                     onClick={()=>{}}
             />
             <CheckedButton  onClick={()=> {}} >check me</CheckedButton>
+            <CheckedButton isActive={true} variant={'accept'} onClick={()=> {}} >check me</CheckedButton>
 
             <GenericModalBase handleClose={()=>{}} isOpen={false}>
             dank

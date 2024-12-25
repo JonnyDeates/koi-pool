@@ -10,7 +10,7 @@ export type CheckedButtonProps = {
 } & ButtonProps
 
 export function CheckedButton(checkedButtonProps: CheckedButtonProps ) {
-  const {isActive, children, imgProps = {}, wrapperImgProps = {}, ...buttonProps} = checkedButtonProps
+  const {isActive, children, className = '',imgProps = {}, wrapperImgProps = {}, ...buttonProps} = checkedButtonProps
 
   const imageSelected = isActive ?  checked : unchecked;
   const altSelected = isActive ? 'Checked' :'Unchecked'
@@ -18,7 +18,7 @@ export function CheckedButton(checkedButtonProps: CheckedButtonProps ) {
   const {className: imageWrapperClassName = ''} = wrapperImgProps;
   const {className: imgClassName = ''} = imgProps;
 
-  return <Button {...buttonProps}>
+  return <Button isActive={isActive} {...buttonProps} className={`${styles.CheckButton} ${className}`}>
     <div {...wrapperImgProps} className={`${styles.Checkbox} ${imageWrapperClassName}`}>
       <img src={imageSelected} alt={altSelected} {...imgProps} className={`${styles.CheckboxImage} ${imgClassName}`}  />
     </div>
